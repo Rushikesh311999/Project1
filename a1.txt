@@ -1,0 +1,77 @@
+
+C:\Users\satal>git init
+Initialized empty Git repository in C:/Users/satal/.git/
+
+C:\Users\satal>cd git
+
+C:\Users\satal\git>git init
+Initialized empty Git repository in C:/Users/satal/git/.git/
+
+C:\Users\satal\git>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a1.txt
+        a2.txt
+        a3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\satal\git>git add a1.txt
+
+C:\Users\satal\git>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a2.txt
+        a3.txt
+
+
+C:\Users\satal\git>git commit-m "first file commited..."
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+C:\Users\satal\git>git commit-m"first file commited..."
+git: 'commit-mfirst file commited...' is not a git command. See 'git --help'.
+
+C:\Users\satal\git>git commit -m"first file commited..."
+[master (root-commit) b85bf3a] first file commited...
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a1.txt
+
+C:\Users\satal\git>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a2.txt
+        a3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\satal\git>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a2.txt
+        a3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\satal\git>
